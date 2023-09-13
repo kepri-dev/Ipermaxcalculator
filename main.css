@@ -50,10 +50,16 @@ fieldset.numbers {
 fieldset.signs {
   border: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
 }
 
+fieldset.memory {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
 fieldset.signs_results {
   border: none;
   display: grid;
@@ -124,6 +130,14 @@ button.sign {
   transition: transform 0.3s ease-in-out;
 }
 
+button.memory {
+  background-color: var(--soft_blue);
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
 button.sign:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -151,6 +165,11 @@ button.sign_deletos {
 }
 
 button.sign_deletos:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button.memory:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
