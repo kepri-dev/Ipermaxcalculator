@@ -54,6 +54,10 @@
         </button>
       </fieldset>
       <fieldset class="signs_results">
+        <button class="historic" id="HButton" onclick="ipermax(event)">
+          H
+        </button>
+        <button class="historic" id="HC" onclick="ipermax(event)">HC</button>
         <button class="sign_equalos" id="sign_equal" onclick="ipermax(event)">
           =
         </button>
@@ -70,5 +74,12 @@
         ></textarea>
       </fieldset>
     </form>
+    <div class="popup" id="thePopup">
+      <div class="popup_content">
+        <ul class="calculations_history">
+          <li class="previous_calculation"></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
