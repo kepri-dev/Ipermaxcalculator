@@ -33,10 +33,13 @@ function ipermax(event) {
       memory = 0; // delete stored value from the memory.
     } else if (buttonValue == "H") {
       popup.value = previousCalculations; // show all previous calculations, separated by a new line
-      showPopup(); // call the showpopup function to show the popup.
+      showPopup();
+      // call the showpopup function to show the popup.
     } else if (buttonValue == "HC") {
-      previousCalculations = []; // delete all history from all previous calculations,
-      closePopup(); // call the closePopup function to hide the popup.
+      previousCalculations = [];
+      closePopup(); // delete all history from all previous calculations,
+    } else if (buttonValue == "close") {
+      closePopup();
     } else {
       if (isNewCalculus) {
         // If a result was just computed.
@@ -111,4 +114,5 @@ function closePopup() {
   const popup = document.getElementById("thePopup"); // target the main div for the popup
   popup.style.display = "none"; // hide the popup.
 }
-document.getElementById("HC").addEventListener("click", closePopup); //force the popup to hide.
+
+document.getElementsByClassName("close").addEventListener("click", closePopup);
