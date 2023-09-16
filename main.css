@@ -230,3 +230,14 @@ button.historic:hover {
   align-items: center;
   justify-content: center;
 }
+
+button.close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border: transparent;
+  font-size: 20px;
+  color: #c60b0b;
+  background-color: transparent;
+  cursor: pointer;
+}
