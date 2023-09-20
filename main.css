@@ -337,3 +337,64 @@ button.close {
     z-index: 2;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  button {
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  button.sign,
+  button.memory,
+  button.historic,
+  button.sign_equalos,
+  button.sign_deletos,
+  button.numeros {
+    height: 60px;
+    width: 70px;
+  }
+
+  .popup {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 50%;
+    z-index: 1;
+    background-color: var(--heavy_blue);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .popup_content {
+    background-color: white;
+    color: #175873;
+    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  button.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 5%;
+    height: 5%;
+    font-size: 14px;
+    color: #c60b0b;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
