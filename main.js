@@ -120,17 +120,30 @@ function isMemory(buttonValue) {
 function showPopup() {
   const popup = document.getElementById("thePopup");
   const calculationsList = document.querySelector(".calculations_history");
+
   calculationsList.innerHTML = "";
+
   previousCalculations.forEach((calculation) => {
     const listItem = document.createElement("li");
+    const deleteItem = document.createElement("button");
+
     listItem.classList.add("previous_calculation");
+    deleteItem.classList.add("delete_previous_calculation");
+
+    deleteItem.textContent = "delete";
     listItem.textContent = calculation;
+
+    deleteItem.addEventListener("click", function () {
+      calculationsList.removeChild(listItem);
+    });
+
+    listItem.appendChild(deleteItem);
+
     calculationsList.appendChild(listItem);
   });
+
   popup.style.display = "block";
 }
-
-document.getElementById("HButton").addEventListener("click", showPopup);
 
 function closePopup() {
   const popup = document.getElementById("thePopup");
