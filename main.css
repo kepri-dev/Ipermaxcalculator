@@ -184,8 +184,9 @@ button.close {
 
 .calculations_history {
   list-style-type: none;
-  display: list-item;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
   margin-top: 30px;
@@ -195,7 +196,21 @@ button.close {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
+
+.delete_previous_calculation {
+  font-size: 14px;
+  color: var(--red);
+  background-color: transparent;
+  text-align: right;
+  cursor: pointer;
+  transform: scale(1) !important;
+}
+
+/* -------------------- RESPONSIVENESS CODE -------------------- */
+/* -------------------- RESPONSIVENESS CODE -------------------- */
+/* -------------------- RESPONSIVENESS CODE -------------------- */
 
 @media only screen and (max-width: 1080px) {
   body {
@@ -337,7 +352,6 @@ button.close {
     z-index: 2;
   }
 }
-
 
 @media only screen and (max-width: 450px) {
   button {
