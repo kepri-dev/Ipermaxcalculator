@@ -338,6 +338,7 @@ button.close {
   }
 }
 
+
 @media only screen and (max-width: 450px) {
   button {
     margin: 5px;
