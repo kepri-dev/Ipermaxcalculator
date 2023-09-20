@@ -183,12 +183,10 @@ button.close {
 }
 
 .calculations_history {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -207,7 +205,6 @@ button.close {
   cursor: pointer;
   transform: scale(1) !important;
 }
-
 /* -------------------- RESPONSIVENESS CODE -------------------- */
 /* -------------------- RESPONSIVENESS CODE -------------------- */
 /* -------------------- RESPONSIVENESS CODE -------------------- */
