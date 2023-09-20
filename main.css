@@ -406,11 +406,11 @@ button.close {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 80vw;
+    width: 100%;
+    height: 90vw;
     text-align: center;
     scroll-behavior: smooth;
-    margin: auto;
+    margin: 0 auto;
   }
 
   h1 {
