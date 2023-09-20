@@ -81,10 +81,17 @@
         </button>
       </fieldset>
     </form>
-    <div class="popup" id="thePopup">
+  <div class="popup" id="thePopup">
       <div class="popup_content">
         <ul class="calculations_history">
-          <li class="previous_calculation"></li>
+          <li class="previous_calculation">
+            <button
+              class="delete_previous_calculation"
+              onclick="ipermax(event)"
+            >
+              delete
+            </button>
+          </li>
         </ul>
       </div>
       <button class="close" onclick="ipermax(event)">X</button>
