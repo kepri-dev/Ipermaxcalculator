@@ -15,27 +15,15 @@
   <body>
     <h1>THE MOST SOPHISTICATED CALCULUS TOOL EVER MADE TO WITNESS.</h1>
     <form>
-      <fieldset class="numbers">
-        <button class="numeros" id="n0" onclick="ipermax(event)">0</button>
-        <button class="numeros" id="n1" onclick="ipermax(event)">1</button>
-        <button class="numeros" id="n2" onclick="ipermax(event)">2</button>
-        <button class="numeros" id="n3" onclick="ipermax(event)">3</button>
-        <button class="numeros" id="n4" onclick="ipermax(event)">4</button>
-        <button class="numeros" id="n5" onclick="ipermax(event)">5</button>
-        <button class="numeros" id="n6" onclick="ipermax(event)">6</button>
-        <button class="numeros" id="n7" onclick="ipermax(event)">7</button>
-        <button class="numeros" id="n8" onclick="ipermax(event)">8</button>
-        <button class="numeros" id="n9" onclick="ipermax(event)">9</button>
+      <fieldset class="results_all">
+        <textarea class="numeros" id="result" placeholder="0"></textarea>
+        <textarea
+          class="numeros_unique"
+          id="button_clicked"
+          placeholder=" "
+        ></textarea>
       </fieldset>
-      <fieldset class="signs">
-        <button class="sign" id="sign_plus" onclick="ipermax(event)">+</button>
-        <button class="sign" id="sign_minus" onclick="ipermax(event)">-</button>
-        <button class="sign" id="sign_division" onclick="ipermax(event)">
-          /
-        </button>
-        <button class="sign" id="sign_multiplication" onclick="ipermax(event)">
-          *
-        </button>
+      <fieldset class="memory">
         <button class="memory" id="memory_add" onclick="ipermax(event)">
           M+
         </button>
@@ -53,34 +41,53 @@
           MR
         </button>
       </fieldset>
+      <fieldset class="numbers">
+        <button class="numeros" id="n1" onclick="ipermax(event)">1</button>
+        <button class="numeros" id="n2" onclick="ipermax(event)">2</button>
+        <button class="numeros" id="n3" onclick="ipermax(event)">3</button>
+        <button class="sign" id="sign_plus" onclick="ipermax(event)">+</button>
+        <button class="numeros" id="n4" onclick="ipermax(event)">4</button>
+        <button class="numeros" id="n5" onclick="ipermax(event)">5</button>
+        <button class="numeros" id="n6" onclick="ipermax(event)">6</button>
+        <button class="sign" id="sign_minus" onclick="ipermax(event)">-</button>
+        <button class="numeros" id="n7" onclick="ipermax(event)">7</button>
+        <button class="numeros" id="n8" onclick="ipermax(event)">8</button>
+        <button class="numeros" id="n9" onclick="ipermax(event)">9</button>
+        <button class="sign" id="sign_division" onclick="ipermax(event)">
+          /
+        </button>
+
+        <button class="numeros" id="decimals" onclick="ipermax(event)">
+          .
+        </button>
+        <button class="numeros" id="n0" onclick="ipermax(event)">0</button>
+        <button class="numeros" id="toggle" onclick="ipermax(event)">
+          +/-
+        </button>
+        <button class="sign" id="sign_multiplication" onclick="ipermax(event)">
+          *
+        </button>
+      </fieldset>
       <fieldset class="signs_results">
         <button class="historic" id="HButton" onclick="ipermax(event)">
           H
         </button>
         <button class="historic" id="HC" onclick="ipermax(event)">HC</button>
-        <button class="sign_equalos" id="sign_equal" onclick="ipermax(event)">
-          =
-        </button>
         <button class="sign_deletos" id="delete" onclick="ipermax(event)">
           AC
         </button>
-      </fieldset>
-      <fieldset class="results_all">
-        <textarea class="numeros" id="result" placeholder="0"></textarea>
-        <textarea
-          class="numeros_unique"
-          id="button_clicked"
-          placeholder=" "
-        ></textarea>
+        <button class="sign_equalos" id="sign_equal" onclick="ipermax(event)">
+          =
+        </button>
       </fieldset>
     </form>
     <div class="popup" id="thePopup">
       <div class="popup_content">
-        <button class="close" onclick="ipermax(event)">close</button>
         <ul class="calculations_history">
           <li class="previous_calculation"></li>
         </ul>
       </div>
+      <button class="close" onclick="ipermax(event)">X</button>
     </div>
   </body>
 </html>
